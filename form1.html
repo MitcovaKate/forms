@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Form</title>
+    <style type='text/css'>
+        body{
+          color:#000000; background-color:#ffffff;
+          font-family:arial, verdana, sans-serif; font-size:12pt;}
+         fieldset {
+          font-size:12px;
+          padding:10px;
+          width:250px;
+          line-height:1.8;}
+        </style>
+</head>
+<body>
+    <form action="thanks.html">
+      <fieldset >
+          <legend>Personal data</legend>
+          <label for="name">Your name</label>
+          <input type="text" id="name" required><br>
+          <label for="date">Your birthday</label>
+          <input type="date" id="date"><br>
+          <label for="tel">Your telephone number</label>
+          <input type="tel" id="tel" ><br>
+          <label for="email">Your telephone email adress</label>
+          <input type="email" id="email"required>
+        </fieldset>
+        <br>
+          <fieldset>
+          <legend>Cours</legend>
+          <label for="speciality">Choose your speciality</label>
+          <select id="speciality" required>
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="direction">Choose your direction</label>
+            <select id="direction" required>
+                <option value="Mobile">Mobile development</option>
+                <option value="Node">Node.js development</option>
+             </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>Hours</legend>
+            <label for="hours">Choose hours</label>
+            <select id="hours" required>
+                <optgroup label="Morning">
+                  <option>9:00</option>
+                  <option>11:00</option></optgroup>
+                  <optgroup label="Afternoon">
+                  <option>14:00</option>
+                  <option>16:00</option></optgroup>
+              </select>
+            </fieldset><br><hr>
+            <label>
+                <input type="checkbox" required>
+                I agree with the <a href="terms.html" target="_blank">terms</a> and conditions
+              </label><hr><br>
+    <fieldset>
+          <legend>Add comments</legend>
+        <textarea rows="10" cols="45" name="text" placeholder="your message..." ></textarea><br>
+        </fieldset>
+        <button>Apply</button>
+      </form>   
+</body>
+</html>
