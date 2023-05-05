@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teh Poll|Multistep</title>
+</head>
+<body>
+    <form action="poll2.html">
+        <h1>Teh Survey</h1>
+        <fieldset >
+            <legend>Personal data</legend>
+            <label for="name">Your name</label>
+            <input type="text" id="name" required><br><br>
+            <label for="job">Your job title</label>
+            <select id="job" required>
+                  <option value="Front-end">Front-end</option>
+                  <option value="Back-end">Back-end</option>
+                  <option value="Des">Designer</option>
+                  <option value="Tester">TesterQA</option>
+                  <option value="CloudEn">Cloud-Engineer</option>
+              </select><br><br>
+              <label for="company">Your Company</label>
+              <select id="company" required>
+                <option value="Endava">Endava</option>
+                <option value="ProGaming">ProGaming</option>
+                <option value="Google">Google</option>
+                <option value="Softlide">Softlider</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Add comments</legend>
+          <textarea maxlength="100" name="text" placeholder="your message..." ></textarea><br>
+          </fieldset>
+        <button>Next</button>
+    </form>
+</body>
+</html>
