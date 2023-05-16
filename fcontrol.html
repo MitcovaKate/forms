@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS|form control</title>
+    <style>
+        .box {display: flex;justify-content: space-between;} 
+        #legend1{background-color: rgb(123, 125, 160);
+            font-size: x-large;
+            color:beige;padding:6px;}
+        .wrapper1{background-color: rgb(123, 125, 160);
+            font-family: Arial, Helvetica, sans-serif;
+            border: 10px solid rgb(219, 219, 230);
+            padding: 10px 15px 20px 15px;}
+        #legend2{background-color:black;letter-spacing:0.4em;color:rgb(242, 49, 52);
+            font-size:27px;padding:6px;border-radius: 10px;text-shadow: 1px 2px 5px red, -1px -2px 5px green;}
+        .wrapper2{background-image: repeating-radial-gradient(circle, rgb(22, 23, 23) 20px, rgb(113, 15, 15) 80px);border-radius: 10px;
+            color:rgb(242, 237, 230);
+            font-size: 23px;padding:6px;margin: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;letter-spacing: 1em;}
+            #Pennywise{padding:6px;margin:25px;}
+            #Cujo{padding: 6px;margin:25px;}
+            #Werecats{padding: 6px;margin:25px;}
+        .wrapper3 {
+          background-color: rgb(78, 165, 130);
+          list-style-type: none;
+          padding: 0;
+          border-radius: 3px;
+        }
+        .row {
+          padding: .5em;
+        }
+        .row > label {
+          padding: .5em 1em .5em 0;
+        }
+        .row > input,
+        .row > button {
+          padding: .5em;
+        }
+        .row > button {
+          background: rgb(203, 117, 117);
+          color: white;font-size: 23px;
+          border: 0;
+        }
+        #but1:hover{filter: brightness(150%);}
+        </style>
+</head>
+<body>
+    <div class="box">
+    <form action="/some/url">
+        <fieldset class="wrapper1">
+            <legend id="legend1">Cleaning</legend>
+            <h2 style="color:beige;padding:5px;margin-bottom: 5px;">Inside/Outside Fridge Cleaning</h2>
+            <button style="padding: 5px 13px 5px 13px ;font-size: 23px;">-</button>
+            <input type="text" value="1" size="5" style="font-size:23px;padding: 5px;">
+            <button style="padding:5px 12px 5px 12px ;font-size: 23px;">+</button>
+        </fieldset>
+    </form>
+    <form>
+            <fieldset class="wrapper2">
+              <legend id="legend2">Choose your favorite  S.Kings monster</legend>
+              <input type="radio" id="Pennywise" name="monster" value="P">
+              <label for="Pennywise">Pennywise</label><br>
+          
+              <input type="radio" id="Cujo" name="monster" value="C">
+              <label for="Cujo">Cujo</label><br>
+          
+              <input  type="radio" id="Werecats" name="monster" value="W">
+              <label for="Werecats">Werecats</label>
+            </fieldset>
+          </form>
+          <form>
+            <ul class="wrapper3">
+              <li class="row">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+              </li>
+              <li class="row">
+                <label for="townborn">Your adress</label>
+                <input type="text" id="townborn">
+              </li>
+              <li class="row">
+                <label for="email">Your Email adress</label>
+                <input type="email" id="email">
+              </li>
+              <li class="row">
+                <button  id="but1" type="submit">Send</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+</body>
+</html>
